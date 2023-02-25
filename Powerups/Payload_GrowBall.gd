@@ -7,7 +7,7 @@ func _ready():
 	var Ball_Container = get_node_or_null("/root/Game/Ball_Container")
 	if Ball_Container != null:
 		for c in Ball_Container.get_children():			
-			c.call_deferred("change_size", Vector2(2,2))
+			c.call_deferred("change_size", Vector2(4,4))
 
 func payload():
 	pass
@@ -17,5 +17,5 @@ func _on_Timer_timeout():
 	var Ball_Container = get_node_or_null("/root/Game/Ball_Container")
 	if Ball_Container != null:
 		for c in Ball_Container.get_children():
-			c.call_deferred("change_size", Vector2(1,1))
+			c.call_deferred("change_size", Vector2(2,2))
 	queue_free()

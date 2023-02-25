@@ -1,9 +1,10 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://GameSprites/Tadpole.png" type="Texture" id=1]
 
 [node name="Indicator" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -7.5
-margin_top = -7.5
-margin_right = 7.5
-margin_bottom = 7.5
+[node name="Sprite" type="Sprite" parent="."]
+rotation = -1.5708
+scale = Vector2( 1.01105, 1.02281 )
+texture = ExtResource( 1 )
